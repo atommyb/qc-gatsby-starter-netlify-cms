@@ -5,6 +5,9 @@ import Layout from "../components/Layout";
 
 export default class IndexPage extends React.Component {
   render() {
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+
     return (
       <Layout>
         <section
@@ -13,8 +16,8 @@ export default class IndexPage extends React.Component {
             backgroundImage: "url(img/qc/field-trees-bg.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "bottom center",
-            paddingTop: "10rem",
-            paddingBottom: "10rem"
+            paddingTop: "8rem",
+            paddingBottom: "8rem"
           }}
         >
           <div class="hero-body">
@@ -22,13 +25,17 @@ export default class IndexPage extends React.Component {
               <h1 class="title is-bold is-1" style={{ fontSize: "5rem" }}>
                 Queen Charlton
               </h1>
-              <h2 class="subtitle is-2">Welcome to our Village</h2>
+              <h2 class="subtitle is-3">Welcome to our Village</h2>
             </div>
           </div>
         </section>
         <section className="section container">
           <div class="columns">
-            <div class="column is-one-third is-flex">
+            <div
+              class="column is-one-third is-flex"
+              style={{ flexDirection: "column" }}
+            >
+              <h1 className="title">Our Village Hall</h1>
               <Card
                 image={{
                   src: "/img/qc/hall-inside.jpg",
@@ -43,13 +50,16 @@ export default class IndexPage extends React.Component {
                 link={{ url: "/hall", msg: "Would you like to hire the hall?" }}
               />
             </div>
-            <div class="column is-one-third is-flex">
+            <div
+              class="column is-one-third is-flex"
+              style={{ flexDirection: "column" }}
+            >
+              <h1 className="title">The Village Fete</h1>
               <Card
                 image={{
                   src: "img/qc/the-green.jpg",
                   alt: "People gathering on the village green during the fete"
                 }}
-                title={"The Village Fete"}
                 desc={`Cake stalls, Brass Band, Morris Dancers and traditional
                   Fete games - what more could you want? We pride ourselves on
                    providing a large amount of varied and traditional
@@ -60,13 +70,16 @@ export default class IndexPage extends React.Component {
                 }}
               />
             </div>
-            <div class="column is-one-third is-flex">
+            <div
+              class="column is-one-third is-flex"
+              style={{ flexDirection: "column" }}
+            >
+              <h1 className="title">The Village History</h1>
               <Card
                 image={{
                   src: "/img/qc/church-lighter.jpg",
                   alt: "St Margarets Church, Queen Charlton"
                 }}
-                title={"The Village History"}
                 desc={`Originally simply named ‘Charlton’, the prefix was added
                   when the estate was given by Henry VIII to Queen Catherine
                   Parr. We bet you didn't know that?`}
@@ -78,20 +91,38 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <section className="section container" id={"news"}>
+          <h1 className="title">News and Events</h1>
+          {posts.map(({ node: post }) => (
+            <div
+              className="content"
+              style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
+              key={post.id}
+            >
+              <p>
+                <Link className="has-text-primary" to={post.fields.slug}>
+                  {post.frontmatter.title}
+                </Link>
+                <span> &bull; </span>
+                <small>{post.frontmatter.date}</small>
+              </p>
+              <p>
+                {post.excerpt}
+                <br />
+                <br />
+                <Link className="button is-small" to={post.fields.slug}>
+                  Keep Reading →
+                </Link>
+              </p>
+            </div>
+          ))}
+        </section>
       </Layout>
     );
   }
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
-};
-
-const Card = ({ image, title, desc, link }) => (
+const Card = ({ image, desc, link }) => (
   <div
     class="card is-flex flex-dir-col"
     style={{ flexDirection: "column", flex: "1" }}
@@ -118,9 +149,6 @@ const Card = ({ image, title, desc, link }) => (
         class="content is-flex"
         style={{ flexDirection: "column", flex: "1" }}
       >
-        <h1 className="is-size-4" style={{ marginTop: 0 }}>
-          {title}
-        </h1>
         <p>{desc}</p>
       </div>
       <Link to={link.url} className="button is-primary is-rounded">
@@ -129,3 +157,35 @@ const Card = ({ image, title, desc, link }) => (
     </div>
   </div>
 );
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array
+    })
+  })
+};
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`;
