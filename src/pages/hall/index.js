@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import { Carousel } from "react-responsive-carousel";
+// eslint-disable-next-line no-unused-vars
+// import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const carouselData = [
   {
@@ -22,7 +24,8 @@ const carouselData = [
     btnText: "Hire the Hall"
   },
   {
-    src: "/img/qc/streamers.jpg",
+    // src: "/img/qc/streamers.jpg",
+    src: "/img/qc/annie-spratt-96526-unsplash.jpg",
     title: "Planning a party?",
     caption:
       "Granny's 80th or a Fairy Princess party, our Hall will be perfect.",
@@ -39,12 +42,12 @@ const carouselData = [
 ];
 
 const carouselOptions = {
-  showArrows: true,
   showThumbs: false,
   showStatus: false,
   autoPlay: true,
-  interval: 4000,
-  transitionTime: 500
+  interval: 6000,
+  transitionTime: 700,
+  infiniteLoop: true
 };
 
 const HallPage = ({
@@ -53,108 +56,107 @@ const HallPage = ({
       siteMetadata: { title }
     }
   }
-}) => (
-  <Layout>
-    <Helmet title={`The Village Hall | ${title}`} />
-    <section>
-      <div className="container content">
-        <h1 className="title is-size-2 has-text-weight-bold ">
-          Our Village Hall
-        </h1>
-      </div>
-
-      <Carousel {...carouselOptions}>
-        {carouselData.map(({ src, title, caption, url, btnText }) => (
-          <div
-            style={{
-              position: "relative",
-              paddingTop: "33%",
-              backgroundImage: `url(${src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center"
-            }}
-            key={src}
-          >
+}) => {
+  debugger;
+  return (
+    <Layout>
+      <Helmet title={`The Village Hall | ${title}`} />
+      <section>
+        <div className="container content">
+          <h1 className="title is-size-2 has-text-weight-bold ">
+            Our Village Hall
+          </h1>
+        </div>
+        <Carousel {...carouselOptions}>
+          {carouselData.map(({ src, title, caption, url, btnText }) => (
             <div
-              className="has-text-right"
               style={{
-                position: "absolute",
-                right: "10%",
-                bottom: "4rem",
-                maxWidth: "60%"
+                position: "relative",
+                paddingTop: "30%",
+                backgroundImage: `url(${src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
               }}
+              key={src}
             >
-              <h1
-                className="title has-text-weight-bold has-text-white"
+              <div
+                className="has-text-right has-z-2"
                 style={{
-                  fontSize: "4rem",
-                  textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
+                  position: "absolute",
+                  right: "10%",
+                  bottom: "4rem",
+                  maxWidth: "60%"
                 }}
               >
-                {title}
-              </h1>
-              <p
-                className="subtitle has-body-font has-text-white is-size-4"
-                style={{
-                  textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
-                }}
-              >
-                {caption}
+                <h1
+                  className="title has-text-weight-bold has-text-white"
+                  style={{
+                    fontSize: "4rem",
+                    textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
+                  }}
+                >
+                  {title}
+                </h1>
+                <p
+                  className="subtitle has-body-font has-text-white is-size-4"
+                  style={{
+                    textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
+                  }}
+                >
+                  {caption}
+                </p>
+                <Link to={url} className="button is-medium is-primary">
+                  {btnText}
+                </Link>
+              </div>
+            </div>
+          ))}
+        </Carousel>
+      </section>
+
+      <section className="section" id="hire">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              <h1 className="has-text-weight-bold title">Hire the hall</h1>
+              <p>
+                Why not have your wedding reception, birthday party or any other
+                special occasion in our quaint Village Hall.
               </p>
-              <Link to={url} className="button is-medium is-primary">
-                {btnText}
-              </Link>
+              <ul>
+                <li>Wooden floor</li>
+                <li>tables & chairs</li>
+                <li>linen</li>
+                <li>glasses</li>
+                <li>utlery</li>
+              </ul>
+              <p>
+                Everything you need for that special occasion and the venue
+                you’ve been looking for.
+              </p>
+              <p>
+                Please complete the enquiry form or call 0117 986 7011 and
+                Caroline will be very happy to help!
+              </p>
+              <hr />
+              Essential information Price Measurements Facilities Parking
+              Opening hours Booking Form
+            </div>
+            <div className="column is-one-third">
+              <figure className="image is-16-9">
+                <img src="/img/qc/hall-inside.jpg" alt="" />
+              </figure>
             </div>
           </div>
-        ))}
-      </Carousel>
-    </section>
-
-    <section className="section" id="hire">
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <h1 className="has-text-weight-bold title">Hire the hall</h1>
-            <p>
-              Why not have your wedding reception, birthday party or any other
-              special occasion in our quaint Village Hall.
-            </p>
-            <ul>
-              <li>Wooden floor</li>
-              <li>tables & chairs</li>
-              <li>linen</li>
-              <li>glasses</li>
-              <li>utlery</li>
-            </ul>
-            <p>
-              Everything you need for that special occasion and the venue you’ve
-              been looking for.
-            </p>
-            <p>
-              Please complete the enquiry form or call 0117 986 7011 and
-              Caroline will be very happy to help!
-            </p>
-            <hr />
-            Essential information Price Measurements Facilities Parking Opening
-            hours Booking Form
-          </div>
-          <div className="column is-one-third">
-            <figure class="image is-16-9">
-              <img
-                src="https://bulma.io/images/placeholders/640x360.png"
-                alt=""
-              />
-            </figure>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section className="section container" id="calendar">
-      <h1>Calendar the hall</h1>
-    </section>
-  </Layout>
-);
+      <section className="section container" id="calendar">
+        <h1>Calendar the hall</h1>
+      </section>
+    </Layout>
+  );
+};
 
 export default HallPage;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 
 const FetePage = ({
@@ -15,7 +15,7 @@ const FetePage = ({
     <section className="section">
       <div className="container content">
         <h1 className="title is-size-2 has-text-weight-bold ">
-          The Annual Village Fete
+          The Annual Village Fete - Saturday 8th June 2019
         </h1>
         <p>
           At the Queen Charlton Vllage Fete we pride ourselves on providing a
