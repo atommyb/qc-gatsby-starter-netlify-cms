@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
   componentDidMount() {
@@ -35,6 +34,9 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
+            <h1 className="navbar-item has-text-weight-bold	is-7">
+              Queen Charlton
+            </h1>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
               <span />
