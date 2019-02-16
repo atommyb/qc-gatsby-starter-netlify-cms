@@ -13,19 +13,33 @@ export default class IndexPage extends React.Component {
         <section
           class="hero is-primary"
           style={{
-            backgroundImage: "url(img/qc/field-trees-bg.jpg)",
+            // backgroundImage: "url(img/qc/field-trees-bg.jpg)",
+            backgroundImage: "url(img/qc/wall-leaves-crop.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "bottom center",
+            backgroundPosition: "center center",
             paddingTop: "8rem",
             paddingBottom: "8rem"
           }}
         >
           <div class="hero-body">
             <div class="container">
-              <h1 class="title is-bold is-1" style={{ fontSize: "5rem" }}>
+              <h1
+                class="title is-1"
+                style={{
+                  fontSize: "5rem",
+                  textShadow: "0 4px 8px rgba(0,0,0,0.5)"
+                }}
+              >
                 Queen Charlton
               </h1>
-              <h2 class="subtitle is-3">Welcome to our Village</h2>
+              <h2
+                class="subtitle has-text-weight-bold is-3"
+                style={{
+                  textShadow: "0 4px 8px rgba(0,0,0,0.5)"
+                }}
+              >
+                Welcome to our Village
+              </h2>
             </div>
           </div>
         </section>
@@ -35,7 +49,7 @@ export default class IndexPage extends React.Component {
               class="column is-one-third is-flex"
               style={{ flexDirection: "column" }}
             >
-              <h1 className="title">Our Village Hall</h1>
+              <h1 className="title">The Village Hall</h1>
               <Card
                 image={{
                   src: "/img/qc/hall-inside.jpg",
