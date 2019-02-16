@@ -198,8 +198,9 @@ const HallPage = ({
                         will be very happy to help!
                       </p>
 
+                      <br />
                       <div className="content">
-                        <h1>Contact</h1>
+                        <h2 className="title is-4">Contact</h2>
                         <form
                           name="contact"
                           method="post"
@@ -280,9 +281,7 @@ const HallPage = ({
               <article className="tile is-child box">
                 <div className="content">
                   <h2 className="title">Essential information</h2>
-                  <p className="subtitle">
-                    Available when you hire the hall are;
-                  </p>
+                  <p>Available when you hire the hall are;</p>
                   <ul>
                     <li>Tables & Chairs</li>
                     <li>Table linen</li>
@@ -292,7 +291,7 @@ const HallPage = ({
                     <li>Toilets</li>
                   </ul>
 
-                  <h2 className="title">Capacity & Dimensions</h2>
+                  <h2 className="title is-5">Capacity & Dimensions</h2>
                   <p>
                     The hall can hold up to 100 people standing, or 80 seated
                     with tables (for example at a Wedding Reception).
