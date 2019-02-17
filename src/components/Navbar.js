@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+// import Modal from "react-bulma-components/lib/components/modal";
 
 const Navbar = class extends React.Component {
   componentDidMount() {
@@ -28,14 +29,18 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-primary is-spaced"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
-            <h1 className="navbar-item has-text-weight-bold	is-7">
-              Queen Charlton
+            <h1
+              className="navbar-item has-text-weight-bold is-marginless title is-3"
+              style={{ marginRight: "2em" }}
+            >
+              Q<span className="is-sr-only">ueen</span> C
+              <span className="is-sr-only">harlton</span>
             </h1>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
@@ -45,25 +50,51 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           <div id="navMenu" className="navbar-menu">
-            <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/">
+            <div className="navbar-start">
+              <Link className="navbar-item" activeClassName="is-active" to="/">
                 Home
               </Link>
-              <Link className="navbar-item" to="/hall">
+              <Link
+                className="navbar-item"
+                activeClassName="is-active"
+                to="/hall"
+              >
                 Hall
               </Link>
-              <Link className="navbar-item" to="/fete">
+              <Link
+                className="navbar-item"
+                activeClassName="is-active"
+                to="/fete"
+              >
                 Fete
               </Link>
-              <Link className="navbar-item" to="/history">
+              <Link
+                className="navbar-item"
+                activeClassName="is-active"
+                to="/history"
+              >
                 History
               </Link>
-              <Link className="navbar-item" to="/#news">
+              <Link
+                className="navbar-item"
+                activeClassName="is-active"
+                to="/#news"
+              >
                 News
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact us
-              </Link>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <Link
+                    className="button"
+                    activeClassName="active"
+                    to="/contact"
+                  >
+                    Contact us
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

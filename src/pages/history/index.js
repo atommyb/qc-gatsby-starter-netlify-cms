@@ -19,7 +19,14 @@ const HistoryPage = ({
 }) => (
   <Layout>
     <Helmet title={`The Village History | ${title}`} />
-    <section class="hero is-medium is-primary is-bold">
+    <section
+      class="hero is-medium is-primary is-bold"
+      style={{
+        backgroundImage: "url(img/qc/history/arch.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center center"
+      }}
+    >
       <div class="hero-body">
         <div class="container">
           <h1 className="title is-size-2 has-text-weight-bold ">
@@ -39,12 +46,8 @@ const HistoryPage = ({
             <h2 className="title">Charlton...</h2>
             <p>
               Originally simply named ‘Charlton’, the prefix was added when the
-              estate was given by Henry VIII to Queen Catherine Parr.
-            </p>
-            <p>
-              The Church of St Margaret dates from the 12th century and has been
-              designated by English Heritage as a Grade II listed building.
-              There is a late medieval cross on the village green.
+              estate was given by Henry VIII to Queen Catherine Parr. There is a
+              late medieval cross on the village green.
             </p>
             <p>
               A fair, granted by Queen Elizabeth I when she passed through the
@@ -63,11 +66,8 @@ const HistoryPage = ({
             <h2 className="title">Did you know...</h2>
             <ul>
               <li>
-                The church, dedicated to St Margaret of Antioch, was built circa
-                1200, probably superseding a timber building from before the
-                Norman Conquest.
+                There is an old Norman arch, possibly from Keynsham Abbey.
               </li>
-              <li>A Norman arch, possibly from Keynsham Abbey.</li>
               <li>The oldest house recorded is Tolsey House in 1549.</li>
               <li>
                 18th century Manor House. Wilkie Collins wrote most of the
@@ -87,14 +87,40 @@ const HistoryPage = ({
             </ul>
           </div>
         </div>
-        <div className="gallery">
-          <h2 className="title">Historical Images</h2>
-          <Carousel {...carouselOptions}>
-            {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
-              <img src={`/img/qc/history/village-0${n}.jpg`} alt="" key={n} />
-            ))}
-          </Carousel>
+
+        <div className="tile is-ancestor">
+          <div className="tile is-parent is-4">
+            <div className="tile is-child box">
+              <h2 className="title is-4">St Margaret's Church</h2>
+              <figure class="image">
+                <img src="/img/qc/church-lighter.jpg" alt="" />
+              </figure>
+              <br />
+              <p>
+                The Church, dedicated to St Margaret of Antioch, was built circa
+                1200, probably superseding a timber building from before the
+                Norman Conques and has been designated by English Heritage as a
+                Grade II listed building.
+              </p>
+            </div>
+          </div>
+          <div className="tile is-parent is-8">
+            <div className="tile is-child box">
+              <h2 className="title is-4">Historical Images</h2>
+              <Carousel {...carouselOptions}>
+                {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
+                  <img
+                    src={`/img/qc/history/village-0${n}.jpg`}
+                    alt=""
+                    key={n}
+                  />
+                ))}
+              </Carousel>
+            </div>
+          </div>
         </div>
+
+        <div className="gallery" />
       </div>
     </section>
   </Layout>
