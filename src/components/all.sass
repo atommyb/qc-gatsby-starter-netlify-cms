@@ -88,6 +88,29 @@ h1,h2,h3,h4,h5,.title,.subtitle
     top: 0
     left: 0
 
+.hall-carousel
+  position: relative
+  padding-top: 30%
+  background-size: cover
+  background-position: center
+
+  .title
+    font-size: 4rem
+  .title,
+  .subtitle
+    text-shadow: rgba(0,0,0,0.6) 0px 0px 16px
+
+  .hall-carousel-slide
+    max-width: 60%
+
+@media (max-width: 425px)
+  .hall-carousel
+    padding-top: 100%
+    .title
+      font-size: 2rem
+    .hall-carousel-slide
+      max-width: 100%
+
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow
   z-index: 3

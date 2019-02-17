@@ -99,39 +99,22 @@ const HallPage = ({
       <Carousel {...carouselOptions}>
         {carouselData.map(({ src, title, caption, url, btnText }) => (
           <div
-            style={{
-              position: "relative",
-              paddingTop: "30%",
-              backgroundImage: `url(${src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center"
-            }}
+            className="hall-carousel"
+            style={{ backgroundImage: `url(${src})` }}
             key={src}
           >
             <div
-              className="has-text-right has-z-2"
+              className="hall-carousel-slide has-text-right has-z-2"
               style={{
                 position: "absolute",
                 right: "10%",
-                bottom: "4rem",
-                maxWidth: "60%"
+                bottom: "4rem"
               }}
             >
-              <h1
-                className="title has-text-weight-bold has-text-white"
-                style={{
-                  fontSize: "4rem",
-                  textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
-                }}
-              >
+              <h1 className="title has-text-weight-bold has-text-white">
                 {title}
               </h1>
-              <p
-                className="subtitle has-body-font has-text-white is-size-4"
-                style={{
-                  textShadow: "rgba(0,0,0,0.6) 0px 0px 16px"
-                }}
-              >
+              <p className="subtitle has-body-font has-text-white is-size-4">
                 {caption}
               </p>
               <Link to={url} className="button is-medium is-primary">
