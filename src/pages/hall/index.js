@@ -3,13 +3,11 @@ import Helmet from "react-helmet";
 import { navigate } from "gatsby-link";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
+import Flickity from "react-flickity-component";
 
-const isClientSide = typeof window !== "undefined";
-
-if (isClientSide) {
+if (typeof window !== "undefined") {
   // Make scroll behavior of internal links smooth
   require("smooth-scroll")('a[href*="#"]');
-  const Flickity = require("flickity");
 }
 
 const carouselData = [
@@ -99,29 +97,25 @@ const HallPage = ({
   return (
     <Layout>
       <Helmet title={`The Village Hall | ${title}`} />
-      {isClientSide && (
-        <Flickity options={flickityOptions}>
-          {carouselData.map(({ src, title, caption, url, btnText }) => (
-            <div
-              className="hall-carousel"
-              style={{ backgroundImage: `url(${src})` }}
-              key={src}
-            >
-              <div className="hall-carousel-slide has-text-right has-z-2">
-                <h1 className="title has-text-weight-bold has-text-white">
-                  {title}
-                </h1>
-                <p className="subtitle has-body-font has-text-white">
-                  {caption}
-                </p>
-                <Link to={url} className="button is-medium is-primary">
-                  {btnText}
-                </Link>
-              </div>
+      <Flickity options={flickityOptions}>
+        {carouselData.map(({ src, title, caption, url, btnText }) => (
+          <div
+            className="hall-carousel"
+            style={{ backgroundImage: `url(${src})` }}
+            key={src}
+          >
+            <div className="hall-carousel-slide has-text-right has-z-2">
+              <h1 className="title has-text-weight-bold has-text-white">
+                {title}
+              </h1>
+              <p className="subtitle has-body-font has-text-white">{caption}</p>
+              <Link to={url} className="button is-medium is-primary">
+                {btnText}
+              </Link>
             </div>
-          ))}
-        </Flickity>
-      )}
+          </div>
+        ))}
+      </Flickity>
 
       <section className="section">
         <div className="container">
