@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 
 export default class IndexPage extends React.Component {
@@ -37,16 +37,14 @@ export default class IndexPage extends React.Component {
               <h1 className="title">Village Hall</h1>
               <Card
                 image={{
-                  src: "/img/qc/hall-inside.jpg",
-                  alt: "Village hall Wedding reception"
+                  src: "/img/qc/yoga-mat-roll.jpg",
+                  alt: "Yoga matt being rolled up"
                 }}
                 title={"Our Village Hall"}
-                desc={`Why not have your wedding reception, birthday party or any
-                  other special occasion in our quaint Village Hall. Wooden
-                  floor- table chairs- linen- glasses-cutlery- Everything you
-                  need for that special occasion and the venue you’ve been
-                  looking for.`}
-                link={{ url: "/hall", msg: "Would you like to hire the hall?" }}
+                desc={`Fitness class, Wedding Reception, Children's Birthday party or any
+                  other special occasion. A lovely wooden floor, vaulted ceiling and period
+                  features - there's everything you need.`}
+                link={{ url: "/hall", msg: "Hire the hall or join a class?" }}
               />
             </div>
             <div

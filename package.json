@@ -30,6 +30,7 @@
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.45",
+    "smooth-scroll": "^15.0.0",
     "uuid": "^3.2.1"
   },
   "keywords": [

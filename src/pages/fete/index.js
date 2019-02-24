@@ -25,19 +25,14 @@ const carouselImages = [
   11,
   12,
   13,
-  14,
-  15,
   16,
   17,
   18,
-  19,
   20,
   21,
   22,
   23,
-  24,
-  25,
-  26
+  25
 ];
 
 const FetePage = ({
@@ -78,6 +73,11 @@ const FetePage = ({
                 At the Queen Charlton Vllage Fete we pride ourselves on
                 providing a large amount of varied and traditional attractions
                 for the whole family.
+              </p>
+              <p>
+                Stalls are placed all around the village and theroad is closed
+                so you are free to wander. Plenty of free parking is organised a
+                short walk away.
               </p>
               <p>All proceeds go to help the Village Hall and Church funds.</p>
               <p>Come on down this summer for the likes of:</p>

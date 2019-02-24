@@ -7,13 +7,18 @@ import { Carousel } from "react-responsive-carousel";
 // eslint-disable-next-line no-unused-vars
 // import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
+if (typeof window !== "undefined") {
+  // Make scroll behavior of internal links smooth
+  require("smooth-scroll")('a[href*="#"]');
+}
+
 const carouselData = [
   {
     src: "/img/qc/hall-front.jpg",
     title: "Our Village Hall",
     caption:
       "Everything you need for your next big occasion - or a just a little gathering.",
-    url: "/hall#hire",
+    url: "/hall#booking-form",
     btnText: "Find out more"
   },
   {
@@ -21,7 +26,7 @@ const carouselData = [
     title: "It'll fit you just right",
     caption:
       "Try out or run an Exercise class, Choir session or many other things",
-    url: "/hall#hire",
+    url: "/hall#booking-form",
     btnText: "Hire the Hall"
   },
   {
@@ -30,15 +35,15 @@ const carouselData = [
     title: "Planning a party?",
     caption:
       "Granny's 80th or a Fairy Princess party, our Hall will be perfect.",
-    url: "/hall#calendar",
-    btnText: "Check our calendar for dates"
+    url: "/hall#booking-form",
+    btnText: "Request a booking"
   },
   {
     src: "/img/qc/bouquet-on-table.jpg",
     title: "Share your special day",
     caption: "All your closest family and friends - bring on the good times.",
-    url: "/hall#calendar",
-    btnText: "Check our availability"
+    url: "/hall#booking-form",
+    btnText: "Request a booking"
   }
 ];
 
@@ -182,7 +187,7 @@ const HallPage = ({
                       </p>
 
                       <br />
-                      <div className="content">
+                      <div className="content" id="booking-form">
                         <h2 className="title is-4">Contact</h2>
                         <form
                           name="contact"
@@ -291,6 +296,23 @@ const HallPage = ({
 
                   <h2 className="title is-5">Parking</h2>
                   <p>Parking is limited, so please enquire when booking.</p>
+
+                  <h2 className="title is-5">The Address</h2>
+                  <p class="subtitle">
+                    <a
+                      href="https://www.google.com/maps/dir/Unnamed+Road,+Bristol+BS31+2SJ/51.4013777,-2.5262606/@51.4011618,-2.5274224,353m/data=!3m1!1e3"
+                      target="_blank"
+                    >
+                      Find us on Google Maps
+                    </a>
+                  </p>
+                  <p>
+                    Village Hall <br />
+                    Queen Charlton <br />
+                    Keynsham <br />
+                    Bristol <br />
+                    BS31 2SJ <br />
+                  </p>
                 </div>
               </article>
             </div>
