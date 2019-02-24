@@ -11,17 +11,16 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section
-          class="hero is-primary"
+          class="hero is-primary has-gradient-dark"
           style={{
-            // backgroundImage: "url(img/qc/wall-leaves-bw.jpg)",
             backgroundImage: "url(img/qc/wall-leaves.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "center center",
-            paddingTop: "8rem",
-            paddingBottom: "8rem"
+            backgroundPosition: "center 20%",
+            paddingTop: "8vmin",
+            paddingBottom: "8vmin"
           }}
         >
-          <div class="hero-body">
+          <div class="hero-body content">
             <div class="container">
               <h1 class="title is-1">Queen Charlton</h1>
               <h2 class="subtitle is-3">Welcome to our Village</h2>
@@ -148,7 +147,10 @@ const Card = ({ image, desc, link }) => (
       >
         <p>{desc}</p>
       </div>
-      <Link to={link.url} className="button is-primary is-rounded">
+      <Link
+        to={link.url}
+        className="button has-text-weight-bold is-primary is-rounded"
+      >
         {link.msg}
       </Link>
     </div>

@@ -35,13 +35,15 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <h1
-              className="navbar-item has-text-weight-bold is-marginless title is-3"
-              style={{ marginRight: "2em" }}
-            >
-              Q<span className="is-sr-only">ueen</span> C
-              <span className="is-sr-only">harlton</span>
-            </h1>
+            <Link to="/">
+              <h1
+                className="navbar-item has-text-weight-bold is-marginless title is-3 logo-link"
+                style={{ marginRight: "2em" }}
+              >
+                Q<span className="is-sr-only">ueen</span> C
+                <span className="is-sr-only">harlton</span>
+              </h1>
+            </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
               <span />
@@ -83,9 +85,9 @@ const Navbar = class extends React.Component {
                 News
               </Link>
             </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons">
+            <div className="navbar-end">
+              <div className="navbar-item">
+                <div className="buttons">
                   <Link
                     className="button"
                     activeClassName="active"

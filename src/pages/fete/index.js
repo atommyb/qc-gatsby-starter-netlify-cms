@@ -102,7 +102,7 @@ const FetePage = ({
             </div>
           </div>
           <div className="tile is-parent is-8">
-            <div className="tile is-child box">
+            <div className="tile is-child">
               <Carousel {...carouselOptions}>
                 {carouselImages.map(n => (
                   <img src={`/img/qc/fete/${n}.jpg`} alt="" key={n} />

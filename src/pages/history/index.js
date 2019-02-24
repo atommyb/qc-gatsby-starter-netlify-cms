@@ -88,39 +88,29 @@ const HistoryPage = ({
           </div>
         </div>
 
-        <div className="tile is-ancestor">
-          <div className="tile is-parent is-4">
-            <div className="tile is-child box">
-              <h2 className="title is-4">St Margaret's Church</h2>
-              <figure class="image">
-                <img src="/img/qc/church-lighter.jpg" alt="" />
-              </figure>
-              <br />
-              <p>
-                The Church, dedicated to St Margaret of Antioch, was built circa
-                1200, probably superseding a timber building from before the
-                Norman Conques and has been designated by English Heritage as a
-                Grade II listed building.
-              </p>
-            </div>
+        <div className="columns">
+          <div className="column is-4">
+            <h2 className="title is-4">St Margaret's Church</h2>
+            <figure class="image">
+              <img src="/img/qc/church-lighter.jpg" alt="" />
+            </figure>
+            <br />
+            <p>
+              The Church, dedicated to St Margaret of Antioch, was built circa
+              1200, probably superseding a timber building from before the
+              Norman Conques and has been designated by English Heritage as a
+              Grade II listed building.
+            </p>
           </div>
-          <div className="tile is-parent is-8">
-            <div className="tile is-child box">
-              <h2 className="title is-4">Historical Images</h2>
-              <Carousel {...carouselOptions}>
-                {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
-                  <img
-                    src={`/img/qc/history/village-0${n}.jpg`}
-                    alt=""
-                    key={n}
-                  />
-                ))}
-              </Carousel>
-            </div>
+          <div className="column is-8">
+            <h2 className="title is-4">Historical Images</h2>
+            <Carousel {...carouselOptions}>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
+                <img src={`/img/qc/history/village-0${n}.jpg`} alt="" key={n} />
+              ))}
+            </Carousel>
           </div>
         </div>
-
-        <div className="gallery" />
       </div>
     </section>
   </Layout>

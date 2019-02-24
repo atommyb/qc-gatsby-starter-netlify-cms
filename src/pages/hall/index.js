@@ -108,20 +108,11 @@ const HallPage = ({
             style={{ backgroundImage: `url(${src})` }}
             key={src}
           >
-            <div
-              className="hall-carousel-slide has-text-right has-z-2"
-              style={{
-                position: "absolute",
-                right: "10%",
-                bottom: "4rem"
-              }}
-            >
+            <div className="hall-carousel-slide has-text-right has-z-2">
               <h1 className="title has-text-weight-bold has-text-white">
                 {title}
               </h1>
-              <p className="subtitle has-body-font has-text-white is-size-4">
-                {caption}
-              </p>
+              <p className="subtitle has-body-font has-text-white">{caption}</p>
               <Link to={url} className="button is-medium is-primary">
                 {btnText}
               </Link>
@@ -302,6 +293,7 @@ const HallPage = ({
                     <a
                       href="https://www.google.com/maps/dir/Unnamed+Road,+Bristol+BS31+2SJ/51.4013777,-2.5262606/@51.4011618,-2.5274224,353m/data=!3m1!1e3"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Find us on Google Maps
                     </a>
