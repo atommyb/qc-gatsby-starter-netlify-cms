@@ -3,9 +3,7 @@ import Helmet from "react-helmet";
 import { navigate } from "gatsby-link";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import { Carousel } from "react-responsive-carousel";
-// eslint-disable-next-line no-unused-vars
-// import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import Flickity from "react-flickity-component";
 
 if (typeof window !== "undefined") {
   // Make scroll behavior of internal links smooth
@@ -47,13 +45,11 @@ const carouselData = [
   }
 ];
 
-const carouselOptions = {
-  showThumbs: false,
-  showStatus: false,
-  autoPlay: true,
-  interval: 6000,
-  transitionTime: 700,
-  infiniteLoop: true
+const flickityOptions = {
+  className: "hall-carousel",
+  lazyLoad: 2,
+  cellAlign: "left",
+  autoPlay: 6000
 };
 
 const encode = data => {
@@ -101,7 +97,7 @@ const HallPage = ({
   return (
     <Layout>
       <Helmet title={`The Village Hall | ${title}`} />
-      <Carousel {...carouselOptions}>
+      <Flickity options={flickityOptions}>
         {carouselData.map(({ src, title, caption, url, btnText }) => (
           <div
             className="hall-carousel"
@@ -119,7 +115,7 @@ const HallPage = ({
             </div>
           </div>
         ))}
-      </Carousel>
+      </Flickity>
 
       <section className="section">
         <div className="container">
@@ -289,7 +285,7 @@ const HallPage = ({
                   <p>Parking is limited, so please enquire when booking.</p>
 
                   <h2 className="title is-5">The Address</h2>
-                  <p class="subtitle">
+                  <p className="subtitle">
                     <a
                       href="https://www.google.com/maps/dir/Unnamed+Road,+Bristol+BS31+2SJ/51.4013777,-2.5262606/@51.4011618,-2.5274224,353m/data=!3m1!1e3"
                       target="_blank"
