@@ -133,127 +133,104 @@ const HallPage = ({
                     other special occasion in our quaint Village Hall.
                   </p>
                   <p>
-                    Our prices start from just <strong>£30 per hour</strong> and
+                    Our prices start from just <strong>£16 per hour</strong> and
                     we have special rates for local residents and repeat
                     bookings.
                   </p>
-                  <table className="table is-bordered is-narrow is-hoverable is-fullwidth">
-                    <thead>
-                      <tr>
-                        <th>{}</th>
-                        <th>Weekday</th>
-                        <th>Evening</th>
-                        <th>Weekends</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Hourly</th>
-                        <td>£30 per hour</td>
-                        <td>£40 per hour</td>
-                        <td>£50 per hour</td>
-                      </tr>
-                      <tr>
-                        <th>Day rate</th>
-                        <td colSpan="2">£150 for the day</td>
-                        <td>£250 for the day</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p>
+                    Regular bookings are usually for the duration of term times
+                    or 7/8 weeks block bookings, these bookings attract a 12.5%
+                    discount.
+                  </p>
+
+                  <br />
+                  <hr />
+                  <br />
+
+                  <section id="weddings">
+                    <h2 className="title">Request a booking</h2>
+
+                    <p>
+                      If you have any questions or would like to book the hall,
+                      please contact us using the form below.
+                    </p>
+                    <p>
+                      Alternatively, please call 0117 986 7011 and Caroline will
+                      be very happy to help!
+                    </p>
+
+                    <br />
+                    <div className="content" id="booking-form">
+                      <h2 className="title is-4">Contact</h2>
+                      <form
+                        name="contact"
+                        method="post"
+                        action="/hall"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        onSubmit={handleSubmit}
+                      >
+                        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div hidden>
+                          <label>
+                            Don’t fill this out:{" "}
+                            <input name="bot-field" onChange={handleChange} />
+                          </label>
+                        </div>
+                        <div className="field">
+                          <label className="label" htmlFor={"name"}>
+                            Your name
+                          </label>
+                          <div className="control">
+                            <input
+                              className="input"
+                              type={"text"}
+                              name={"name"}
+                              onChange={handleChange}
+                              id={"name"}
+                              required={true}
+                            />
+                          </div>
+                        </div>
+                        <div className="field">
+                          <label className="label" htmlFor={"email"}>
+                            Email
+                          </label>
+                          <div className="control">
+                            <input
+                              className="input"
+                              type={"email"}
+                              name={"email"}
+                              onChange={handleChange}
+                              id={"email"}
+                              required={true}
+                            />
+                          </div>
+                        </div>
+                        <div className="field">
+                          <label className="label" htmlFor={"message"}>
+                            Message
+                          </label>
+                          <div className="control">
+                            <textarea
+                              className="textarea"
+                              name={"message"}
+                              onChange={handleChange}
+                              id={"message"}
+                              required={true}
+                            />
+                          </div>
+                        </div>
+                        <div className="field">
+                          <button className="button is-link" type="submit">
+                            Send
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </section>
                 </article>
-              </div>
-              <div className="tile">
-                <div className="tile is-parent">
-                  <article className="tile is-child box">
-                    <section id="weddings">
-                      <h2 className="title">Request a booking</h2>
-
-                      <p>
-                        If you have any questions or would like to book the
-                        hall, please contact us using the form below.
-                      </p>
-                      <p>
-                        Alternatively, please call 0117 986 7011 and Caroline
-                        will be very happy to help!
-                      </p>
-
-                      <br />
-                      <div className="content" id="booking-form">
-                        <h2 className="title is-4">Contact</h2>
-                        <form
-                          name="contact"
-                          method="post"
-                          action="/hall"
-                          data-netlify="true"
-                          data-netlify-honeypot="bot-field"
-                          onSubmit={handleSubmit}
-                        >
-                          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                          <input
-                            type="hidden"
-                            name="form-name"
-                            value="contact"
-                          />
-                          <div hidden>
-                            <label>
-                              Don’t fill this out:{" "}
-                              <input name="bot-field" onChange={handleChange} />
-                            </label>
-                          </div>
-                          <div className="field">
-                            <label className="label" htmlFor={"name"}>
-                              Your name
-                            </label>
-                            <div className="control">
-                              <input
-                                className="input"
-                                type={"text"}
-                                name={"name"}
-                                onChange={handleChange}
-                                id={"name"}
-                                required={true}
-                              />
-                            </div>
-                          </div>
-                          <div className="field">
-                            <label className="label" htmlFor={"email"}>
-                              Email
-                            </label>
-                            <div className="control">
-                              <input
-                                className="input"
-                                type={"email"}
-                                name={"email"}
-                                onChange={handleChange}
-                                id={"email"}
-                                required={true}
-                              />
-                            </div>
-                          </div>
-                          <div className="field">
-                            <label className="label" htmlFor={"message"}>
-                              Message
-                            </label>
-                            <div className="control">
-                              <textarea
-                                className="textarea"
-                                name={"message"}
-                                onChange={handleChange}
-                                id={"message"}
-                                required={true}
-                              />
-                            </div>
-                          </div>
-                          <div className="field">
-                            <button className="button is-link" type="submit">
-                              Send
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                    </section>
-                  </article>
-                </div>
               </div>
             </div>
             <div className="tile is-parent">
@@ -262,31 +239,42 @@ const HallPage = ({
                   <h2 className="title">Essential information</h2>
                   <p>Available when you hire the hall are;</p>
                   <ul>
+                    <li>Main Hall</li>
                     <li>Tables & Chairs</li>
                     <li>Table linen</li>
-                    <li>Cutlery, Crockery & Glasses</li>
-                    <li>Basic kitchen (no cooking)</li>
+                    <li>Tea & Dinner Crockery</li>
+                    <li>Cutlery & Glasses</li>
+                    <li>Kettle, Cooker, Microwave, Servery</li>
+                    <li>Sound Equipment</li>
                     <li>Fridge</li>
-                    <li>Toilets</li>
+                    <li>Accessible Toilets</li>
+                    <li>Store Room</li>
+                    <li>Wheelchair Access</li>
                   </ul>
 
                   <h2 className="title is-5">Capacity & Dimensions</h2>
                   <p>
-                    The hall can hold up to 100 people standing, or 80 seated
-                    with tables (for example at a Wedding Reception).
+                    The hall can hold approximately 60 people standing, or 50
+                    seated with tables (for example at a Wedding Reception).
                   </p>
                   <p>
                     The hall is approximately 12 metres long by 6 metres wide
                   </p>
 
                   <h2 className="title is-5">Alcohol Licence</h2>
-                  <p>The hall does not have a licence to sell alcohol.</p>
+                  <p>
+                    The hall does not have a licence to sell alcohol but you are
+                    welcome to bring your own.
+                  </p>
 
                   <h2 className="title is-5">Deposit</h2>
-                  <p>We do not require a deposit for bookings.</p>
+                  <p>We usually ask for a small £15 deposit for bookings.</p>
 
                   <h2 className="title is-5">Parking</h2>
-                  <p>Parking is limited, so please enquire when booking.</p>
+                  <p>
+                    Parking in our small village is quite limited, so please
+                    enquire when booking.
+                  </p>
 
                   <h2 className="title is-5">The Address</h2>
                   <p class="subtitle">
