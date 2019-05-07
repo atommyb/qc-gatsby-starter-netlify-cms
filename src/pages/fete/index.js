@@ -11,6 +11,7 @@ const carouselOptions = {
   dynamicHeight: true
 };
 
+//
 const carouselImages = [
   5,
   1,
