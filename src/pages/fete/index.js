@@ -58,7 +58,8 @@ const FetePage = ({
             The Annual Village Fete
           </h1>
           <p className="subtitle">
-            Saturday 8th June 2019, 2pm - £3 or £10 for a family of 4.
+            Saturday 8th June 2019, 2pm - £2.50 Adults, £1 concessions, under
+            16s free.
           </p>
         </div>
       </div>
