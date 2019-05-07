@@ -2,39 +2,39 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
-import { Carousel } from "react-responsive-carousel";
+import ImageGallery from "react-image-gallery";
+
+const carouselImages = [
+  { original: "/img/qc/fete/5.jpg" },
+  { original: "/img/qc/fete/1.jpg" },
+  { original: "/img/qc/fete/2.jpg" },
+  { original: "/img/qc/fete/3.jpg" },
+  { original: "/img/qc/fete/4.jpg" },
+  { original: "/img/qc/fete/6.jpg" },
+  { original: "/img/qc/fete/7.jpg" },
+  { original: "/img/qc/fete/8.jpg" },
+  { original: "/img/qc/fete/9.jpg" },
+  { original: "/img/qc/fete/10.jpg" },
+  { original: "/img/qc/fete/11.jpg" },
+  { original: "/img/qc/fete/12.jpg" },
+  { original: "/img/qc/fete/13.jpg" },
+  { original: "/img/qc/fete/16.jpg" },
+  { original: "/img/qc/fete/17.jpg" },
+  { original: "/img/qc/fete/18.jpg" },
+  { original: "/img/qc/fete/20.jpg" },
+  { original: "/img/qc/fete/21.jpg" },
+  { original: "/img/qc/fete/22.jpg" },
+  { original: "/img/qc/fete/23.jpg" },
+  { original: "/img/qc/fete/25.jpg" }
+];
 
 const carouselOptions = {
-  showThumbs: false,
-  showStatus: false,
-  transitionTime: 700,
-  dynamicHeight: true
+  items: carouselImages,
+  showThumbnails: false,
+  lazyLoad: true,
+  useBrowserFullscreen: false,
+  defaultImage: "https://via.placeholder.com/300"
 };
-
-//
-const carouselImages = [
-  5,
-  1,
-  2,
-  3,
-  4,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  16,
-  17,
-  18,
-  20,
-  21,
-  22,
-  23,
-  25
-];
 
 const FetePage = ({
   data: {
@@ -46,15 +46,15 @@ const FetePage = ({
   <Layout>
     <Helmet title={`Our Village Fete | ${title}`} />
     <section
-      class="hero is-medium is-primary is-bold has-gradient-dark"
+      className="hero is-medium is-primary is-bold has-gradient-dark"
       style={{
         backgroundImage: "url(/img/qc/fete-panorama.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center center"
       }}
     >
-      <div class="hero-body content">
-        <div class="container">
+      <div className="hero-body content">
+        <div className="container">
           <h1 className="title is-size-2 has-text-weight-bold">
             The Annual Village Fete
           </h1>
@@ -105,11 +105,7 @@ const FetePage = ({
           </div>
           <div className="tile is-parent is-8">
             <div className="tile is-child">
-              <Carousel {...carouselOptions}>
-                {carouselImages.map(n => (
-                  <img src={`/img/qc/fete/${n}.jpg`} alt="" key={n} />
-                ))}
-              </Carousel>
+              <ImageGallery {...carouselOptions} />
             </div>
           </div>
         </div>
