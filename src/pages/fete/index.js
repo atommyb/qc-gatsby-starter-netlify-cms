@@ -48,7 +48,7 @@ const FetePage = ({
     <section
       class="hero is-medium is-primary is-bold has-gradient-dark"
       style={{
-        backgroundImage: "url(img/qc/fete-panorama.jpg)",
+        backgroundImage: "url(/img/qc/fete-panorama.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center center"
       }}
