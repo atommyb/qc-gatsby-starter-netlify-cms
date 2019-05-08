@@ -77,7 +77,7 @@ const FetePage = ({
                 for the whole family.
               </p>
               <p>
-                Stalls are placed all around the village and theroad is closed
+                Stalls are placed all around the village and the road is closed
                 so you are free to wander. Plenty of free parking is organised a
                 short walk away.
               </p>
