@@ -66,15 +66,15 @@ module.exports = {
       }
     },
     // "gatsby-plugin-purgecss", // must be after other CSS plugins
-    {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        printRejected: true,
-        ignore: [
-          "node_modules/react-responsive-carousel/lib/styles/carousel.min.css"
-        ]
-      }
-    },
+    // {
+    //   resolve: "gatsby-plugin-purgecss",
+    //   options: {
+    //     printRejected: true,
+    //     ignore: [
+    //       "node_modules/react-responsive-carousel/lib/styles/carousel.min.css"
+    //     ]
+    //   }
+    // },
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ]
 };
