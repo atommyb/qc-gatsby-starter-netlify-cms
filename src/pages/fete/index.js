@@ -82,23 +82,32 @@ const FetePage = ({
                 short walk away.
               </p>
               <p>All proceeds go to help the Village Hall and Church funds.</p>
+              <p>
+                Our raffle this year has a STAR PRIZE - £100 John Lewis
+                Vouchers!
+              </p>
+
               <p>Come on down this summer for the likes of:</p>
               <ul>
                 <li>Cake stall</li>
+                <li>Cream Teas</li>
+                <li>Children's Trail</li>
+                <li>Bell ringers</li>
+                <li>Owl display</li>
+                <li>Mini-Pub</li>
+                <li>Drinks and BBQ</li>
+                <li>Gin stall</li>
+                <li>Bee Keepers</li>
+                <li>Coconut shy</li>
                 <li>Ice creams</li>
+                <li>Bat the rat</li>
+                <li>Skittles</li>
                 <li>Arts and Crafts stalls</li>
-                <li>Plant stall</li>
-                <li>BBQ & Beer Tent</li>
+                <li>Famous Classic racing cars from the 60's</li>
+                <li>Cider stall</li>
                 <li>Bouncy Castle</li>
                 <li>Keynsham Brass Band</li>
                 <li>Traditional Morris Dancers</li>
-                <li>Bric-a-brac</li>
-                <li>Coconut Shy</li>
-                <li>Bottle stall</li>
-                <li>
-                  Raffle - STAR PRIZE - WIN AN APPLE IPAD! Or Champagne Or....
-                </li>
-                <li>Famous Classic racing cars from the 60's</li>
                 <li>Plus much more...</li>
               </ul>
             </div>
