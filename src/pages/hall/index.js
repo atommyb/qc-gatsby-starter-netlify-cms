@@ -85,7 +85,7 @@ const HallPage = ({
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    debugger;
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -94,7 +94,10 @@ const HallPage = ({
         ...state
       })
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then((args) => {
+        console.log("WE DID THEN", {args)
+        return navigate(form.getAttribute("action"))
+      })
       .catch(error => alert(error));
   };
 
