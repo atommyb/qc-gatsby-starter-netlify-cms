@@ -170,13 +170,13 @@ const HallPage = ({
                     <div className="content" id="booking-form">
                       <h2 className="title is-4">Contact</h2>
 
-                      {state?.formSubmitted &&
+                      {state.formSubmitted &&
                         <div>
                           <p>Thanks, your form has been sent.</p>
                         </div>
                       }
 
-                      {!state?.formSubmitted &&
+                      {!state.formSubmitted &&
 
                         <form
                           name="contact"
