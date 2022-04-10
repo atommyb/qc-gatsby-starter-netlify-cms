@@ -10,18 +10,18 @@ tags:
 ---
 ## **Tuesday - 1pm - 2pm**
 
-To book, contact Carrie [**info@barefoot4life.co.uk**](mailto:info@barefoot4life.co.uk)
+To book, contact Carrie <mailto:info@barefoot4life.co.uk>
 
-<hr>
+<hr />
 
 ## **Wednesday - 6pm - 7pm**
 
-**To book, contact Melissa **[**mncfitness@yahoo.co.uk**](mailto:mncfitness@yahoo.co.uk)
+To book, contact Melissa <mailto:mncfitness@yahoo.co.uk>
 
 <hr>
 
 ## **Thursday - 6.30pm - 7.30pm**
 
-**To book, contact Vivien **[**vivienmwaters@googlemail.com**](vivienmwaters@googlemail.com)
+To book, contact Vivien <mailto:vivienmwaters@googlemail.com>
 
 <hr />
