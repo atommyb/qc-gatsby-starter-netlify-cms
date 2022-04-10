@@ -69,7 +69,9 @@ const HallPage = ({
     }
   }
 }) => {
-  var state = {};
+  var state = {
+    formSubmitted = !!window?.query?.submitted
+  };
 
   const setState = newState => {
     state = {
@@ -96,6 +98,7 @@ const HallPage = ({
     })
       .then((args) => {
         console.log("WE DID THEN", {args)
+        setState({ formSubmitted: true });
         return navigate(form.getAttribute("action"))
       })
       .catch(error => alert(error));
@@ -163,12 +166,23 @@ const HallPage = ({
                     </p>
 
                     <br />
+
                     <div className="content" id="booking-form">
                       <h2 className="title is-4">Contact</h2>
+                      
+                      {state?.formSubmitted && 
+                      <div>
+                        <p>Thanks, your form has been sent.</p>
+                      </div>
+                      }
+                      
+                      
+                      {!state?.formSubmitted &&
+                      
                       <form
                         name="contact"
                         method="post"
-                        action="/hall"
+                        action="/hall?submitted=true"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                         onSubmit={handleSubmit}
@@ -231,6 +245,8 @@ const HallPage = ({
                           </button>
                         </div>
                       </form>
+                      }
+                      
                     </div>
                   </section>
                 </article>
