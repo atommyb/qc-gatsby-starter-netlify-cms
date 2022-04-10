@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: 2019 Village Fete - Saturday 8th June
-date: 2019-05-02T19:45:22.028Z
+title: 2022 Village Fete - Saturday 11th June
+date: 2022-04-10T19:45:22.028Z
 description: >-
   Our annual village fete is coming up fast and we're all really excited and
   busy organising things. Come down and join us for Cakes, Teas, Children's
