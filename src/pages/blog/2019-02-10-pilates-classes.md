@@ -1,32 +1,27 @@
 ---
 templateKey: blog-post
-title: Pilates & Yoga Classes
-date: 2019-02-10T21:40:03.569Z
-description: We have both Pilates and Yoga classes held in the Village Hall.
+title: Pilates Classes
+date: 2022-04-10T11:00:00.000Z
+description: >-
+  We have some excellent Pilates classes held in the Village Hall. Please see
+  below the 
 tags:
-  - yoga
-  - pilates
-  - classes
-  - village hall
+  - ''
 ---
-## **Vital Pilates**
+## **Tuesday - 1pm - 2pm**
 
-Tuesday 10.30am and Thursday 6.30pm - _**elena@vitalpilates.co.uk**_
+To book, contact Carrie [**info@barefoot4life.co.uk**](mailto:info@barefoot4life.co.uk)
 
-Both classes are suitable for beginners or improvers. The course runs for 7 weeks and costs £63 or a single/drop-in is £12.
+<hr>
 
-To book, call Elena on 07732 246866 or visit [vitalpilates.co.uk/keynsham-queen-charlton](http://vitalpilates.co.uk/keynsham-queen-charlton/) .
+## **Wednesday - 6pm - 7pm**
 
+**To book, contact Melissa **[**mncfitness@yahoo.co.uk**](mailto:mncfitness@yahoo.co.uk)
 
+<hr>
 
-<br><hr><br>
+## **Thursday - 6.30pm - 7.30pm**
 
+**To book, contact Vivien **[**vivienmwaters@googlemail.com**](vivienmwaters@googlemail.com)
 
-
-## Yoga classes
-
-We also have Yoga classes held in the village hall. Please see below for times and contacts.
-
-Thursday 1.30pm - _**sue.moon3838@gmail.com**_
-
-Friday 9.30am - _**Samantha.crystals@icloud.com**_
+<hr />
