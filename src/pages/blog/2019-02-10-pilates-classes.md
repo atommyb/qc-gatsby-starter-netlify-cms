@@ -12,16 +12,16 @@ tags:
 
 To book, contact Carrie <mailto:info@barefoot4life.co.uk>
 
-<hr />
+<br><hr /><br>
 
 ## **Wednesday - 6pm - 7pm**
 
 To book, contact Melissa <mailto:mncfitness@yahoo.co.uk>
 
-<hr>
+<br><hr /><br>
 
 ## **Thursday - 6.30pm - 7.30pm**
 
 To book, contact Vivien <mailto:vivienmwaters@googlemail.com>
 
-<hr />
+<br><hr /><br>
