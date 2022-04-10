@@ -97,7 +97,7 @@ const HallPage = ({
       })
     })
       .then((args) => {
-        console.log("WE DID THEN", {args)
+        console.log("WE DID THEN", {args})
         setState({ formSubmitted: true });
         return navigate(form.getAttribute("action"))
       })
@@ -169,84 +169,83 @@ const HallPage = ({
 
                     <div className="content" id="booking-form">
                       <h2 className="title is-4">Contact</h2>
-                      
-                      {state?.formSubmitted && 
-                      <div>
-                        <p>Thanks, your form has been sent.</p>
-                      </div>
+
+                      {state?.formSubmitted &&
+                        <div>
+                          <p>Thanks, your form has been sent.</p>
+                        </div>
                       }
-                      
-                      
+
                       {!state?.formSubmitted &&
-                      
-                      <form
-                        name="contact"
-                        method="post"
-                        action="/hall?submitted=true"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        onSubmit={handleSubmit}
-                      >
-                        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div hidden>
-                          <label>
-                            Don’t fill this out:{" "}
-                            <input name="bot-field" onChange={handleChange} />
-                          </label>
-                        </div>
-                        <div className="field">
-                          <label className="label" htmlFor={"name"}>
-                            Your name
-                          </label>
-                          <div className="control">
-                            <input
-                              className="input"
-                              type={"text"}
-                              name={"name"}
-                              onChange={handleChange}
-                              id={"name"}
-                              required={true}
-                            />
+
+                        <form
+                          name="contact"
+                          method="post"
+                          action="/hall?submitted=true"
+                          data-netlify="true"
+                          data-netlify-honeypot="bot-field"
+                          onSubmit={handleSubmit}
+                        >
+                          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                          <input type="hidden" name="form-name" value="contact" />
+                          <div hidden>
+                            <label>
+                              Don’t fill this out:{" "}
+                              <input name="bot-field" onChange={handleChange} />
+                            </label>
                           </div>
-                        </div>
-                        <div className="field">
-                          <label className="label" htmlFor={"email"}>
-                            Email
-                          </label>
-                          <div className="control">
-                            <input
-                              className="input"
-                              type={"email"}
-                              name={"email"}
-                              onChange={handleChange}
-                              id={"email"}
-                              required={true}
-                            />
+                          <div className="field">
+                            <label className="label" htmlFor={"name"}>
+                              Your name
+                            </label>
+                            <div className="control">
+                              <input
+                                className="input"
+                                type={"text"}
+                                name={"name"}
+                                onChange={handleChange}
+                                id={"name"}
+                                required={true}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <div className="field">
-                          <label className="label" htmlFor={"message"}>
-                            Message
-                          </label>
-                          <div className="control">
-                            <textarea
-                              className="textarea"
-                              name={"message"}
-                              onChange={handleChange}
-                              id={"message"}
-                              required={true}
-                            />
+                          <div className="field">
+                            <label className="label" htmlFor={"email"}>
+                              Email
+                            </label>
+                            <div className="control">
+                              <input
+                                className="input"
+                                type={"email"}
+                                name={"email"}
+                                onChange={handleChange}
+                                id={"email"}
+                                required={true}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <div className="field">
-                          <button className="button is-link" type="submit">
-                            Send
-                          </button>
-                        </div>
-                      </form>
+                          <div className="field">
+                            <label className="label" htmlFor={"message"}>
+                              Message
+                            </label>
+                            <div className="control">
+                              <textarea
+                                className="textarea"
+                                name={"message"}
+                                onChange={handleChange}
+                                id={"message"}
+                                required={true}
+                              />
+                            </div>
+                          </div>
+                          <div className="field">
+                            <button className="button is-link" type="submit">
+                              Send
+                            </button>
+                          </div>
+                        </form>
                       }
-                      
+
                     </div>
                   </section>
                 </article>
