@@ -133,13 +133,13 @@ const HallPage = ({
                     other special occasion in our quaint Village Hall.
                   </p>
                   <p>
-                    Our prices start from just <strong>£16 per hour</strong> and
+                    Our prices start from just <strong>£18 per hour</strong> and
                     we have special rates for local residents and repeat
                     bookings.
                   </p>
                   <p>
                     Regular bookings are usually for the duration of term times
-                    or 7/8 weeks block bookings, these bookings attract a 12.5%
+                    or 7/8 weeks block bookings, these bookings attract a 20%
                     discount.
                   </p>
 
