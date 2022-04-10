@@ -59,8 +59,7 @@ const FetePage = ({
             The Annual Village Fete
           </h1>
           <p className="subtitle">
-            Saturday 8th June 2019, 2pm - £2.50 Adults, £1 concessions, under
-            16s free.
+            Saturday 11th June 2022
           </p>
         </div>
       </div>
@@ -82,10 +81,6 @@ const FetePage = ({
                 short walk away.
               </p>
               <p>All proceeds go to help the Village Hall and Church funds.</p>
-              <p>
-                Our raffle this year has a STAR PRIZE - £100 John Lewis
-                Vouchers!
-              </p>
 
               <p>Come on down this summer for the likes of:</p>
               <ul>
