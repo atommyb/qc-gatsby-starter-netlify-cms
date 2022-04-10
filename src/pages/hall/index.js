@@ -69,9 +69,7 @@ const HallPage = ({
     }
   }
 }) => {
-  const state = {
-    formSubmitted: !!(window.query.submitted)
-  };
+  const state = {};
 
   const setState = newState => {
     state = {
