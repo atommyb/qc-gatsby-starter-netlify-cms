@@ -16,7 +16,7 @@ To book, contact Carrie <mailto:info@barefoot4life.co.uk>
 
 ## **Wednesday - 6pm - 7pm**
 
-To book, contact Melissa <mailto:mncfitness@yahoo.co.uk>
+To book, contact Melissa [info.fitnesswithmelissa@gmail.com](info.fitnesswithmelissa@gmail.com)
 
 <br><hr /><br>
 
