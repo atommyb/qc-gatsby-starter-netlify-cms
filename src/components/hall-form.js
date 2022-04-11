@@ -58,7 +58,7 @@ export const HallForm = () => {
         () => {
           disableTheForm(form);
           showThanks();
-          return navigate(form.getAttribute("action"))
+          // return navigate(form.getAttribute("action"))
         }
       )
       .catch(error => {
