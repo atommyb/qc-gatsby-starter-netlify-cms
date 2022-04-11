@@ -35,6 +35,7 @@ export const HallForm = () => {
 
   const showThanks = () => {
     document.getElementById('thanksMessage').style.display = 'block';
+    document.getElementById('thanksMessage').style.visibility = 'visible';
   }
 
   const handleSubmit = e => {
