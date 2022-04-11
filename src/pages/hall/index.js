@@ -94,11 +94,11 @@ const HallPage = ({
         ...state
       })
     })
-      .then((args) => {
-//         console.log("WE DID THEN", {args})
-        setState({ formSubmitted: true });
-//         return navigate(form.getAttribute("action"))
-      })
+//       .then((args) => {
+// //         console.log("WE DID THEN", {args})
+//         setState({ formSubmitted: true });
+// //         return navigate(form.getAttribute("action"))
+//       })
       .catch(error => {
         console.error("Form error", {error});
         return alert("Ooops, there was a problem. Please try again.")
