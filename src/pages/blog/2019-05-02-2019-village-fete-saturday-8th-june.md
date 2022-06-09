@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 2022 Village Fete - Saturday 11th June
+title: 2022 Village Fete - Saturday 11th June 2pm - 5pm
 date: 2022-04-10T19:45:22.028Z
 description: >-
   Our annual village fete is coming up fast and we're all really excited and
