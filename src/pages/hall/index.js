@@ -105,9 +105,9 @@ const HallPage = ({
                     other special occasion in our quaint Village Hall.
                   </p>
                   <p>
-                    Our prices start from just <strong>£18 per hour</strong> and
-                    we have special rates for local residents and repeat
-                    bookings.
+                    Our prices start from just <strong>£18 per hour</strong> Monday-Friday
+                    or <strong>£20 per hour</strong> on weekends.
+                    We have special rates for local residents and repeat bookings.
                   </p>
                   <p>
                     Regular bookings are usually for the duration of term times
@@ -176,9 +176,6 @@ const HallPage = ({
                     The hall does not have a licence to sell alcohol but you are
                     welcome to bring your own.
                   </p>
-
-                  <h2 className="title is-5">Deposit</h2>
-                  <p>We usually ask for a small £15 deposit for bookings.</p>
 
                   <h2 className="title is-5">Parking</h2>
                   <p>
