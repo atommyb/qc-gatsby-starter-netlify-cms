@@ -14,12 +14,6 @@ To book, contact Carrie <mailto:info@barefoot4life.co.uk>
 
 <br><hr /><br>
 
-## **Wednesday - 6pm - 7pm**
-
-To book, contact Melissa [info.fitnesswithmelissa@gmail.com](info.fitnesswithmelissa@gmail.com)
-
-<br><hr /><br>
-
 ## **Thursday - 6.30pm - 7.30pm**
 
 To book, contact Vivien <mailto:vivienmwaters@googlemail.com>
