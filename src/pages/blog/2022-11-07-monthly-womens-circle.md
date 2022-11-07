@@ -20,3 +20,5 @@ Use the code 'CHARLTON' to get 15% off your booking on checkout, exclusive to Vi
 Link to book : <https://www.thelunacircle.com/events>
 
 <br><hr /><br>
+
+![Luna Circle](/img/image001.png)
