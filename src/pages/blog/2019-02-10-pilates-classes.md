@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Pilates Classes
-date: 2022-04-10T11:00:00.000Z
+date: 2022-11-07T12:00:00.000Z
 description: >-
   We have some excellent Pilates classes held in the Village Hall. Please see
   below the 
