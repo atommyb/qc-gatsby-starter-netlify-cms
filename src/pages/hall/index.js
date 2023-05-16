@@ -114,6 +114,9 @@ const HallPage = ({
                     or 7/8 weeks block bookings, these bookings attract a 20%
                     discount.
                   </p>
+                  <p>
+                    Ultrafast fibre WiFi broadband is now available at the the hall.
+                  </p>
 
                   <br />
                   <hr />
@@ -155,6 +158,7 @@ const HallPage = ({
                     <li>Tea & Dinner Crockery</li>
                     <li>Cutlery & Glasses</li>
                     <li>Kettle, Cooker, Microwave, Servery</li>
+                    <li>WiFi Broadband</li>
                     <li>Sound Equipment</li>
                     <li>Fridge</li>
                     <li>Accessible Toilets</li>

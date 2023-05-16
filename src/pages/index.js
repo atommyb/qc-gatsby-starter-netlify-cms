@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
+import ReactMarkdown from 'react-markdown'
 import Layout from "../components/Layout";
 
 export default class IndexPage extends React.Component {
@@ -51,13 +52,12 @@ export default class IndexPage extends React.Component {
               style={{ flexDirection: "column" }}
             >
               <h1 className="title">Village Fete</h1>
-              <h2>Saturday 10th June - 2-5pm</h2>
               <Card
                 image={{
                   src: "img/qc/the-green.jpg",
                   alt: "People gathering on the village green during the fete"
                 }}
-                desc={`Cake stalls, Brass Band, Morris Dancers and traditional
+                desc={`**Saturday 10th June - 2-5pm** Cake stalls, Brass Band, Morris Dancers and traditional
                   Fete games - what more could you want? We pride ourselves on
                    providing a large amount of varied and traditional
                    attractions for the whole family.`}
@@ -146,7 +146,7 @@ const Card = ({ image, desc, link }) => (
         class="content is-flex"
         style={{ flexDirection: "column", flex: "1" }}
       >
-        <p>{desc}</p>
+        <ReactMarkdown>{desc}</ReactMarkdown>
       </div>
       <Link
         to={link.url}
