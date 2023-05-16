@@ -51,6 +51,7 @@ export default class IndexPage extends React.Component {
               style={{ flexDirection: "column" }}
             >
               <h1 className="title">Village Fete</h1>
+              <h2>Saturday 10th June - 2-5pm</h2>
               <Card
                 image={{
                   src: "img/qc/the-green.jpg",

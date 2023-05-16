@@ -59,7 +59,7 @@ const FetePage = ({
             The Annual Village Fete
           </h1>
           <p className="subtitle">
-            Saturday 11th June 2022
+            Saturday 10th June 2023
           </p>
         </div>
       </div>
