@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import ImageGallery from "react-image-gallery";
+import Facebook from "../../img/facebook.png"
 
 const carouselImages = [
   { original: "/img/qc/fete/5.jpg" },
@@ -69,7 +70,15 @@ const FetePage = ({
         <div className="tile is-ancestor">
           <div className="tile is-parent is-4">
             <div className="tile is-child box">
+              <p className="icon-text">
+                <a href="https://www.facebook.com/people/Queen-Charlton-Village-Fete/100070240627165" className="is-flex is-align-items-center">
+                  <img className="image is-32x32 " src={Facebook} alt="facebook" />
+                  <span className="pl-2">Checkout out out Facebook page</span>
+                </a>
+              </p>
+
               <h2 className="subtitle">Family Attractions</h2>
+
               <p>
                 At the Queen Charlton Vllage Fete we pride ourselves on
                 providing a large amount of varied and traditional attractions
@@ -81,7 +90,6 @@ const FetePage = ({
                 short walk away.
               </p>
               <p>All proceeds go to help the Village Hall and Church funds.</p>
-
               <p>Come on down this summer for the likes of:</p>
               <ul>
                 <li>Cake stall</li>
