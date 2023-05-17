@@ -73,7 +73,7 @@ const FetePage = ({
               <p className="icon-text">
                 <a href="https://www.facebook.com/people/Queen-Charlton-Village-Fete/100070240627165" className="is-flex is-align-items-center">
                   <img className="image is-32x32 " src={Facebook} alt="facebook" />
-                  <span className="pl-2">Checkout out out Facebook page</span>
+                  <span className="pl-2">Checkout out our Facebook page</span>
                 </a>
               </p>
 
