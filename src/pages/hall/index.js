@@ -20,7 +20,7 @@ const carouselData = [
     caption:
       "Everything you need for your next big occasion - or a just a little gathering.",
     url: "/hall#booking-form",
-    btnText: "Find out more"
+    btnText: "Find out more",
   },
   {
     src: "/img/qc/yoga-class.jpg",
@@ -28,7 +28,7 @@ const carouselData = [
     caption:
       "Try out or run an Exercise class, Choir session or many other things",
     url: "/hall#booking-form",
-    btnText: "Hire the Hall"
+    btnText: "Hire the Hall",
   },
   {
     // src: "/img/qc/streamers.jpg",
@@ -37,15 +37,15 @@ const carouselData = [
     caption:
       "Granny's 80th or a Fairy Princess party, our Hall will be perfect.",
     url: "/hall#booking-form",
-    btnText: "Request a booking"
+    btnText: "Request a booking",
   },
   {
     src: "/img/qc/bouquet-on-table.jpg",
     title: "Share your special day",
     caption: "All your closest family and friends - bring on the good times.",
     url: "/hall#booking-form",
-    btnText: "Request a booking"
-  }
+    btnText: "Request a booking",
+  },
 ];
 
 const carouselOptions = {
@@ -54,7 +54,7 @@ const carouselOptions = {
   autoPlay: true,
   interval: 6000,
   transitionTime: 700,
-  infiniteLoop: true
+  infiniteLoop: true,
 };
 
 // const encode = data => {
@@ -66,9 +66,9 @@ const carouselOptions = {
 const HallPage = ({
   data: {
     site: {
-      siteMetadata: { title }
-    }
-  }
+      siteMetadata: { title },
+    },
+  },
 }) => {
   return (
     <Layout>
@@ -105,17 +105,24 @@ const HallPage = ({
                     other special occasion in our quaint Village Hall.
                   </p>
                   <p>
-                    Our prices start from just <strong>£18 per hour</strong> Monday-Friday
-                    or <strong>£20 per hour</strong> on weekends.
-                    We have special rates for local residents and repeat bookings.
+                    Our prices start from just <strong>£18 per hour</strong>{" "}
+                    Monday - Friday or <strong>£21.50 per hour</strong> on
+                    weekends, where 2 hours is the minimum hire time. We have
+                    special rates for local residents and repeat bookings.
                   </p>
                   <p>
-                    Regular bookings are usually for the duration of term times
-                    or 7/8 weeks block bookings, these bookings attract a 20%
-                    discount.
+                    Regular weekly Monday - Friday bookings are usually for the
+                    duration of term times or 7/8 weeks block bookings; these
+                    bookings can be reduced to £14 per hour.
                   </p>
                   <p>
-                    Ultrafast fibre WiFi broadband is now available at the the hall.
+                    Regular monthly Monday - Friday bookings of 3 months as a
+                    minimum can be reduced to <strong>£16 per hour</strong>{" "}
+                    please apply.
+                  </p>
+                  <p>
+                    <strong>Ultrafast fibre WiFi broadband</strong> is now
+                    available at the hall.
                   </p>
 
                   <br />
@@ -140,7 +147,6 @@ const HallPage = ({
                       <h2 className="title is-4">Contact</h2>
 
                       <HallForm />
-
                     </div>
                   </section>
                 </article>
@@ -158,7 +164,7 @@ const HallPage = ({
                     <li>Tea & Dinner Crockery</li>
                     <li>Cutlery & Glasses</li>
                     <li>Kettle, Cooker, Microwave, Servery</li>
-                    <li>WiFi Broadband</li>
+                    <li>Ultrafast WiFi Broadband</li>
                     <li>Sound Equipment</li>
                     <li>Fridge</li>
                     <li>Accessible Toilets</li>
