@@ -7,15 +7,15 @@ import { Carousel } from "react-responsive-carousel";
 const carouselOptions = {
   showThumbs: true,
   showStatus: false,
-  transitionTime: 700
+  transitionTime: 700,
 };
 
 const HistoryPage = ({
   data: {
     site: {
-      siteMetadata: { title }
-    }
-  }
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <Layout>
     <Helmet title={`The Village History | ${title}`} />
@@ -24,7 +24,7 @@ const HistoryPage = ({
       style={{
         backgroundImage: "url(img/qc/history/arch.jpg)",
         backgroundSize: "cover",
-        backgroundPosition: "center center"
+        backgroundPosition: "center center",
       }}
     >
       <div class="hero-body">
@@ -53,7 +53,7 @@ const HistoryPage = ({
               A fair, granted by Queen Elizabeth I when she passed through the
               village in 1573, is held annually on the second Saturday of June.
               The tradition continues to this day so please join us for our next
-              fete on Saturday 10th June, 2023!
+              fete on Saturday 8th June, 2023!
             </p>
             <p>
               A Royal charter was granted by Queen Elizabeth in 1574. The manor
@@ -105,7 +105,7 @@ const HistoryPage = ({
           <div className="column is-8">
             <h2 className="title is-4">Historical Images</h2>
             <Carousel {...carouselOptions}>
-              {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
                 <img src={`/img/qc/history/village-0${n}.jpg`} alt="" key={n} />
               ))}
             </Carousel>

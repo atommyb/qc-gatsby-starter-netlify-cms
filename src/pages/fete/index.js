@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../../components/Layout";
 import ImageGallery from "react-image-gallery";
-import Facebook from "../../img/facebook.png"
+import Facebook from "../../img/facebook.png";
 
 const carouselImages = [
   { original: "/img/qc/fete/5.jpg" },
@@ -26,7 +26,7 @@ const carouselImages = [
   { original: "/img/qc/fete/21.jpg" },
   { original: "/img/qc/fete/22.jpg" },
   { original: "/img/qc/fete/23.jpg" },
-  { original: "/img/qc/fete/25.jpg" }
+  { original: "/img/qc/fete/25.jpg" },
 ];
 
 const carouselOptions = {
@@ -34,15 +34,15 @@ const carouselOptions = {
   showThumbnails: false,
   lazyLoad: true,
   useBrowserFullscreen: false,
-  defaultImage: "https://via.placeholder.com/300"
+  defaultImage: "https://via.placeholder.com/300",
 };
 
 const FetePage = ({
   data: {
     site: {
-      siteMetadata: { title }
-    }
-  }
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <Layout>
     <Helmet title={`Our Village Fete | ${title}`} />
@@ -51,7 +51,7 @@ const FetePage = ({
       style={{
         backgroundImage: "url(/img/qc/fete-panorama.jpg)",
         backgroundSize: "cover",
-        backgroundPosition: "center center"
+        backgroundPosition: "center center",
       }}
     >
       <div className="hero-body content">
@@ -59,9 +59,7 @@ const FetePage = ({
           <h1 className="title is-size-2 has-text-weight-bold">
             The Annual Village Fete
           </h1>
-          <p className="subtitle">
-            Saturday 10th June 2023
-          </p>
+          <p className="subtitle">Saturday 8th June 2023</p>
         </div>
       </div>
     </section>
@@ -71,8 +69,15 @@ const FetePage = ({
           <div className="tile is-parent is-4">
             <div className="tile is-child box">
               <p className="icon-text">
-                <a href="https://www.facebook.com/people/Queen-Charlton-Village-Fete/100070240627165" className="is-flex is-align-items-center">
-                  <img className="image is-32x32 " src={Facebook} alt="facebook" />
+                <a
+                  href="https://www.facebook.com/people/Queen-Charlton-Village-Fete/100070240627165"
+                  className="is-flex is-align-items-center"
+                >
+                  <img
+                    className="image is-32x32 "
+                    src={Facebook}
+                    alt="facebook"
+                  />
                   <span className="pl-2">Checkout out our Facebook page</span>
                 </a>
               </p>

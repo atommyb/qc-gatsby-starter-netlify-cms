@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 
 export default class IndexPage extends React.Component {
@@ -18,7 +18,7 @@ export default class IndexPage extends React.Component {
             backgroundSize: "cover",
             backgroundPosition: "center 20%",
             paddingTop: "8vmin",
-            paddingBottom: "8vmin"
+            paddingBottom: "8vmin",
           }}
         >
           <div class="hero-body content">
@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
               <Card
                 image={{
                   src: "/img/qc/yoga-mat-roll.jpg",
-                  alt: "Yoga matt being rolled up"
+                  alt: "Yoga matt being rolled up",
                 }}
                 title={"Our Village Hall"}
                 desc={`Fitness class, Wedding Reception, Children's Birthday party or any
@@ -55,15 +55,15 @@ export default class IndexPage extends React.Component {
               <Card
                 image={{
                   src: "img/qc/the-green.jpg",
-                  alt: "People gathering on the village green during the fete"
+                  alt: "People gathering on the village green during the fete",
                 }}
-                desc={`**Saturday 10th June - 2-5pm** Cake stalls, Brass Band, Morris Dancers and traditional
+                desc={`**Saturday 8th June - 2-5pm** Cake stalls, Brass Band, Morris Dancers and traditional
                   Fete games - what more could you want? We pride ourselves on
                    providing a large amount of varied and traditional
                    attractions for the whole family.`}
                 link={{
                   url: "/fete",
-                  msg: "What else is going on at our Village Fete?"
+                  msg: "What else is going on at our Village Fete?",
                 }}
               />
             </div>
@@ -75,14 +75,14 @@ export default class IndexPage extends React.Component {
               <Card
                 image={{
                   src: "/img/qc/church-lighter.jpg",
-                  alt: "St Margarets Church, Queen Charlton"
+                  alt: "St Margarets Church, Queen Charlton",
                 }}
                 desc={`Originally simply named ‘Charlton’, the prefix was added
                   when the estate was given by Henry VIII to Queen Catherine
                   Parr. We bet you didn't know that?`}
                 link={{
                   url: "/village",
-                  msg: "Find out more about our beautiful little village."
+                  msg: "Find out more about our beautiful little village.",
                 }}
               />
             </div>
@@ -133,7 +133,7 @@ const Card = ({ image, desc, link }) => (
             height: "auto",
             minHeight: "100%",
             top: "50%",
-            transform: "translateY(-50%)"
+            transform: "translateY(-50%)",
           }}
         />
       </figure>
@@ -161,9 +161,9 @@ const Card = ({ image, desc, link }) => (
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export const pageQuery = graphql`
