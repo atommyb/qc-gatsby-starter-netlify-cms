@@ -160,7 +160,6 @@ const HallPage = ({
                   <ul>
                     <li>Main Hall</li>
                     <li>Tables & Chairs</li>
-                    <li>Table linen</li>
                     <li>Tea & Dinner Crockery</li>
                     <li>Cutlery & Glasses</li>
                     <li>Kettle, Cooker, Microwave, Servery</li>
