@@ -53,7 +53,7 @@ const HistoryPage = ({
               A fair, granted by Queen Elizabeth I when she passed through the
               village in 1573, is held annually on the second Saturday of June.
               The tradition continues to this day so please join us for our next
-              fete on Saturday 8th June, 2023!
+              fete on Saturday 14th June, 2025!
             </p>
             <p>
               A Royal charter was granted by Queen Elizabeth in 1574. The manor

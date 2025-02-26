@@ -57,7 +57,7 @@ export default class IndexPage extends React.Component {
                   src: "img/qc/the-green.jpg",
                   alt: "People gathering on the village green during the fete",
                 }}
-                desc={`**Saturday 8th June - 2-5pm** Cake stalls, Brass Band, Morris Dancers and traditional
+                desc={`**Saturday 14th June 2025 - 2-5pm** Cake stalls, Brass Band, Morris Dancers and traditional
                   Fete games - what more could you want? We pride ourselves on
                    providing a large amount of varied and traditional
                    attractions for the whole family.`}
