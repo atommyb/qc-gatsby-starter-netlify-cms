@@ -70,7 +70,7 @@ const FetePage = ({
             <div className="tile is-child box">
               <p className="icon-text">
                 <a
-                  href="https://www.facebook.com/people/Queen-Charlton-Village-Fete/100070240627165"
+                  href="https://www.facebook.com/p/Queen-Charlton-Village-Community-61557359664193/"
                   className="is-flex is-align-items-center"
                 >
                   <img
