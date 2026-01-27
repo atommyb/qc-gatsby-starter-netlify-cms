@@ -59,7 +59,7 @@ const FetePage = ({
           <h1 className="title is-size-2 has-text-weight-bold">
             The Annual Village Fete
           </h1>
-          <p className="subtitle">Saturday 14th June 2025</p>
+          <p className="subtitle">Saturday 13th June 2026</p>
         </div>
       </div>
     </section>
